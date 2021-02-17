@@ -2,7 +2,7 @@
 layout: post
 title: "Splunk bases"
 author: "fhbapt"
-comments: true
+comments: false
 tags: Forensic
 ---
 
