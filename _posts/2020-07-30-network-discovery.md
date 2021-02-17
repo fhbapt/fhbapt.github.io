@@ -2,7 +2,7 @@
 layout: post
 title: "Network discovery"
 author: "fhbapt"
-comments: true
+comments: false
 tags: Networks
 ---
 
