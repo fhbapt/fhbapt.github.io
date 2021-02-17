@@ -1,12 +1,14 @@
 ---
 layout: post
-categories: posts
-title: "NETWORK DISCOVERY"
-featured-image: /images/2016-11-19/abstract-1.2.jpg
-date-string: JULY 30, 2020
+title: "Network discovery"
+author: "fhbapt"
+comments: true
+tags: Networks
 ---
 
-## COMMONS TOOLS FOR NETWORK DISCOVERY
+In this article, I will present you the most common tools use to dicover network architecture. 
+
+## Common tools for network discovery
 
 ### Netdiscover commands
 
