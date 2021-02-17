@@ -1,9 +1,9 @@
 ---
 layout: post
-categories: posts
-title: STEGANOGRAPHY TOOLS
-featured-image: /images/2016-11-19/abstract-7.1.jpg
-date-string: JULY 31, 2020
+title: "Steganography tools"
+author: "fhbapt"
+comments: false
+tags: Steganography
 ---
 
 ###strings
