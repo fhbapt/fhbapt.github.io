@@ -6,7 +6,7 @@ comments: false
 tags: Networks
 ---
 
-In this article, I will present you the most common tools use to dicover network architecture. 
+In this article, I will present you the most common tools and commands use to dicover network architecture. 
 
 ## Common tools for network discovery
 
