@@ -1,9 +1,9 @@
 ---
 layout: post
-categories: posts
-title: SPLUNK BASES
-featured-image: /images/2016-11-19/abstract-6.2.jpg
-date-string: JULY 30, 2020
+title: "Splunk bases"
+author: "fhbapt"
+comments: true
+tags: Forensic
 ---
 
-## BASICS SEARCH FOR FORENSIC
+## Forensic on splunk
