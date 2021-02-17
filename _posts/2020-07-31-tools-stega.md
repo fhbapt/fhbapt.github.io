@@ -6,32 +6,32 @@ comments: false
 tags: Steganography
 ---
 
-###strings
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of.
 
-###hexdump
+### strings
 
-###binwalk
+### hexdump
 
-###dd
+### binwalk
 
-###exiftool
+### dd
 
-###xxd
+### exiftool
 
+### xxd
 
-
-###Fichier audio
+### Fichier audio
 
 Audacity > Changer la vitesse du son, possibilité de multiplier la vitesse.
 Possibilité de inversée la piste audio avec l'effet reverse.
 
 Sonic Visualizer 
 
-###Fichier pdf
+### Fichier pdf
 
-####pdf-parser.py
-####peepdf
+#### pdf-parser.py
+#### peepdf
 
 
 
-###Fichier image
+### Fichier image
