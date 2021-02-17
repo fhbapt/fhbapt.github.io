@@ -1,17 +1,11 @@
 # Site settings
-title:          Tale
-description:    "Minimal Jekyll theme for storytellers"
-# baseurl:        "/tale"
-url:            "https://chesterhow.github.io"
-
-# Google Analytics
-google_analytics: UA—XXXXXXXX-X
+title:          Baptiste Foucher
+description:    "Blog Baptiste Foucher"
+url:            "https://fhbapt.github.io"
 
 # Author
 author:
-  name:         Chester How
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+  name:         Baptiste Foucher
 
 # Build settings
 markdown:       kramdown
