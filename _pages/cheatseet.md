@@ -7,8 +7,8 @@ permalink: /cheatseet/
 
 ## Table of Contents
 
-[Network](#network)
-    - [Nmap](#nmap)
+1. [Network](#network)
+    1.1 [Nmap](#nmap)
 
 
 ## Networks discovery <a name="network"></a>
