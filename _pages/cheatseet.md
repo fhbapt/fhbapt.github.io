@@ -50,9 +50,7 @@ In this chapter, the most common tools and commands use to dicover network archi
 
 Commands DIG :
 
-```
-dig axfr @dns-server nom-de-domaine
-``` 
+```dig axfr @dns-server nom-de-domaine``` 
 
 ### 139/445 - SMB <a name="smb"></a>
 
