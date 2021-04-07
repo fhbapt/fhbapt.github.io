@@ -6,7 +6,7 @@ comments: false
 tags: Forensic
 ---
 
-Analyses de logs - Splunk
+Introduction à l'analyse de log sur splunk avec l'identification de machines et leurs analyses.
 
 ## Identification de machines 
 
