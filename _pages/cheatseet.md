@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "About"
+title: "Cheatseet"
 author: "fhbapt"
 permalink: /cheatseet/
 ---
