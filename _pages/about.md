@@ -5,4 +5,4 @@ author: "fhbapt"
 permalink: /about/
 ---
 
-Thanks for reading!
+<a href="https://github.com/fhbapt" rel="My Github">![Foo](https://raw.githubusercontent.com/fhbapt/fhbapt.github.io/main/assets/github.ico)</a>
