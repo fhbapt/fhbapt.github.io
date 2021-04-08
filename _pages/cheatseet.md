@@ -15,6 +15,7 @@ permalink: /cheatseet/
   * [Services enumerations](#services)
     * [53 - DNS](#dns)
     * [139/445 - SMB](#smb)
+
 ### [Web vulnerabilities](#web)
  * [File Inclusion](#file-inclusion)
    * [LFI (Local File Inclusion)](#lfi)
