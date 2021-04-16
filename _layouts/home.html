@@ -3,9 +3,9 @@ layout: default
 ---
 
 <div class="catalogue">
+  <img src="../assets/test.jpg" alt="" />
   {% for post in paginator.posts %}
     <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
-      <img src="../assets/test.jpg" alt="" />
       <div>
         <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
         <h1 class="catalogue-title">{{ post.title }}</h1>
