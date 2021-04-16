@@ -1,9 +1,8 @@
 ---
 layout: default
 ---
-
+<img src="../assets/test.jpg" alt="" />
 <div class="catalogue">
-  <img src="../assets/test.jpg" alt="" />
   {% for post in paginator.posts %}
     <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
       <div>
